@@ -35,10 +35,10 @@ curl -X POST \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -d '{
-	"id": "1",
-	"name": "Teerapong",
-	"email": "st.teerapong@gmail.com"
-}'
+    "id": "1",
+    "name": "Teerapong",
+    "email": "st.teerapong@gmail.com"
+  }'
 ```
 ## PATCH
 ```sh
