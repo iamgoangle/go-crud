@@ -15,7 +15,6 @@ brew install glide
 ```
 glide install
 ```
-
 # Application routes
 ## GET /users
 ```sh
@@ -31,7 +30,15 @@ curl http://localhost:3000/show?team=foo&member=bar
 ```
 ## POST /createUser
 ```sh
-curl http://localhost:3000/createUser
+curl -X POST \
+  http://localhost:3000/createUser \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+	"id": "1",
+	"name": "Teerapong",
+	"email": "st.teerapong@gmail.com"
+}'
 ```
 ## PATCH
 ```sh

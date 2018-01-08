@@ -5,6 +5,7 @@ import (
 
 	"github.com/iamgoangle/go-crud/user"
 	"github.com/labstack/echo"
+	"github.com/labstack/echo/middleware"
 )
 
 // Declare server configuration
@@ -13,6 +14,9 @@ const port string = ":3000"
 // Router default router of my app
 func Router() {
 	e := echo.New()
+
+	// apply middleware
+	e.Use(middleware.Logger())
 
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello, World!")
