@@ -1,5 +1,6 @@
 # go-crud
-My public Restful API with Golang
+My simple public project in order to create Restful API with Golang.
+Please note that understand that this repository does not guide you for best practice in golang.
 
 # Prerequisition
 - Install Go compiler to your computer
