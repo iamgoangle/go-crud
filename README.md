@@ -15,3 +15,9 @@ brew install glide
 ```
 glide install
 ```
+
+# Application routes
+## GET /users
+```
+curl http://localhost:3000/users
+```
